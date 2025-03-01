@@ -212,7 +212,7 @@ ynh_app_setting_set "$app" sapass "$sapass"
 # Wait for generation of file
 sleep 5
 sudo cat ${server_root}/logs/ts3server_* | sed -n -e 's/.*token=/Server Admin Token: /p'
-ynh_print_INFO "Server Query Admin: serveradmin ${sapass}"
+echo "Server Query Admin: serveradmin ${sapass}"
 
 
 #=================================================
