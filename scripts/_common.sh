@@ -12,7 +12,7 @@ TS3S_VERSION="3.13.7"
 # libmariadb
 
 # Remote URL to fetch teamspeak tar.bz2 archive
-SOURCE_URL="http://files.teamspeak-services.com/releases/server/${TS3S_VERSION}/teamspeak3-server_linux_${ARCH}-${TS3S_VERSION}.tar.bz2"
+SOURCE_URL="http://files.teamspeak-services.com/releases/server/${TS3S_VERSION}/teamspeak3-server_linux_ARCH-${TS3S_VERSION}.tar.bz2"
 
 # TeamSpeak 3 Server tar.bz2 checksums
 # TODO: get url for checksums
