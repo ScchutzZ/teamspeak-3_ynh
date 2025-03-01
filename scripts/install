@@ -210,7 +210,7 @@ ynh_app_setting_set "$app" sapass "$sapass"
 
 # Let's use the initial log file to get the admin token
 # Wait for generation of file
-sleep 5
+sleep 10
 sudo cat "${server_root}/logs/ts3server_*" | sed -n -e 's/.*token=/Server Admin Token: /p'
 echo "Server Query Admin: serveradmin ${sapass}"
 
