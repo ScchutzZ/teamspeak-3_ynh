@@ -38,3 +38,7 @@ You therefore accept the risks of using your data.
 En installant cette application vous acceptez les conditions d'utilisation spécifique à cette application !
 Ni le packager, ni YunoHost ne pourra etre tenue réponsable d'une mauvaise utilisation de cette application ou d'une défaillance de votre serveur.
 Vous accepté donc les risques d'utilisations de vos données.
+
+###NOTE
+
+The original of these files is https://github.com/YunoHost-Apps/teamspeak-3_ynh. They have been adapted by me to the new version and some updates have been made.
