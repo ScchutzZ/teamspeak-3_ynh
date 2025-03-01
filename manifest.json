@@ -1,0 +1,73 @@
+{
+	"packaging_format": 1,
+	"id": "ts3server",
+	"name": "TeamSpeak 3 Server",
+	"description": {
+		"en": "Cross-platform voice communication server"
+	},
+	"url": "http://teamspeak.com/",
+	"license": "non-free",
+	"maintainer": {
+		"name": "MidgetMob",
+		"email": "jschoulzy@gmail.com",
+		"url": "https://github.com/MidgetMob"
+	},
+	"requirements": {
+		"yunohost": ">= 2.4.2"
+	},
+	"multi_instance": false,
+    "services": [ 
+		"mysql",
+		"nginx",
+		"php5-fpm"
+	],
+    "arguments": {
+        "install" : [
+            {
+				"name": "admin",
+				"type": "user",
+				"ask": {
+					"en": "Specify an admin user (must be an existing YunoHost user)"
+				},
+				"example": "caretaker"
+			},
+			{
+                "name": "arch",
+                "ask": {
+                    "en": "Choose an architecture (must match your server architecture)"
+                },
+                "choices": ["x86", "amd64"],
+                "default": "amd64"
+            },
+			{
+                "name": "dbtype",
+                "ask": {
+                    "en": "Choose a database type"
+                },
+                "choices": ["MariaDB", "SQLite"],
+                "default": "MariaDB"
+            },
+			{
+				"name": "port_voice",
+                "ask": {
+                    "en": "You may specify an alternate UDP voice port (higher than 1024)"
+                },
+                "default": "9987"
+			},
+			{
+				"name": "port_query",
+                "ask": {
+                    "en": "You may specify an alternate TCP query port (higher than 1024)"
+                },
+                "default": "10011"
+			},
+			{
+				"name": "port_filetr",
+                "ask": {
+                    "en": "You may specify an alternate TCP file transfer port (higher than 1024)"
+                },
+                "default": "30033"
+			}
+        ]
+    }
+}

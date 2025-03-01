@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# NEED TO REWORK ENTIRE SCRIPT
+
+# causes the shell to exit if any subcommand or pipeline returns a non-zero status
+set -eu
+
+# The user used to execute teamspeak
+app=$YNH_APP_INSTANCE_NAME
+
+# Initialize user with homefolder, where we store teamspeak3 files
+server_root=$(ynh_app_setting_get $app server_root)
+
+# Copy updated source
+#sudo cp -a ../source/amd64/. $ts3_path
+#sudo chown -R $db_user:$db_user $ts3_path
